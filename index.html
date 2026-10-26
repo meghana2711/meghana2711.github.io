@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Meghana Nalla, Master of Science in Data Science student at Northeastern University. Open to Data Scientist, Data Engineer, Machine Learning, and AI roles.">
+  <meta name="keywords" content="Meghana Nalla, Data Science, Data Engineer, Machine Learning, AI, Northeastern University, Python, SQL, R, Azure, Airflow, Time Series">
+  <meta name="author" content="Meghana Nalla">
+  <meta property="og:title" content="Meghana Nalla | Data Science, Data Engineering & AI Portfolio">
+  <meta property="og:description" content="Explore projects in time series forecasting, statistical inference, deep learning, and ETL data pipelines by Meghana Nalla.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/91136903?v=4">
+
+  <title>Meghana Nalla | Data Science & Engineering Portfolio</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Interactive Ocean Canvas for subtle ripples & glowing bioluminescent bubbles -->
+  <canvas id="ocean-canvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Light Orbs for Glass Refraction -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Home">
+        <span class="brand-symbol" aria-hidden="true">◈</span>
+        <span class="brand-text"><strong>Meghana Nalla</strong><span class="brand-badge">MS Data Science · NEU</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#uniquely-me" class="nav-link">About Me</a></li>
+          <li><a href="#about" class="nav-link">Background</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Controls -->
+      <div class="nav-actions">
+        <!-- Ambient Water Ripples Toggle -->
+        <button id="ripple-toggle" class="glass-icon-btn" title="Toggle Ocean Flow Animation" aria-label="Toggle ocean background animation">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 12h2a8 8 0 0 1 8 8v2M2 7h2a13 13 0 0 1 13 13v2M2 17h2a3 3 0 0 1 3 3v2" />
+          </svg>
+        </button>
+
+        <a href="#contact" class="glass-btn btn-sm btn-highlight">Get In Touch</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="glass-pill status-pill">
+            <span class="status-indicator"></span>
+            <span class="status-text">Open to Data Scientist, Data Engineer, Machine Learning & AI Roles</span>
+          </div>
+
+          <!-- Main Hero Glass Card -->
+          <div class="glass-card hero-glass-card">
+            <div class="hero-text-wrap">
+              <span class="hero-greeting">Hi, I'm</span>
+              <h1 class="hero-name" id="hero-name-display">Meghana Nalla</h1>
+              <p class="hero-headline">Aspiring Data Scientist, Data Engineer & AI Specialist</p>
+              
+              <p class="hero-description">
+                Master of Science in Data Science student at <strong>Northeastern University</strong>. 
+                Experienced in building machine learning models, statistical inference pipelines, time series forecasting, 
+                and data engineering workflows using Python, SQL, R, and cloud platforms.
+              </p>
+
+              <!-- Quick Highlights -->
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number">Northeastern</span>
+                  <span class="stat-label">MS in Data Science</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                  <span class="stat-number">Azure AI</span>
+                  <span class="stat-label">Certified Associate</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                  <span class="stat-number">Python · SQL · R</span>
+                  <span class="stat-label">Core Languages</span>
+                </div>
+              </div>
+
+              <!-- Hero CTA Buttons -->
+              <div class="hero-cta-group">
+                <a href="#uniquely-me" class="glass-btn btn-primary">
+                  <span>About Me</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#projects" class="glass-btn btn-secondary" id="hero-btn-projects">
+                  <span>View Projects</span>
+                </a>
+                <a href="https://github.com/meghana2711" target="_blank" rel="noopener noreferrer" class="glass-btn btn-secondary" title="View GitHub Profile">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Glass Orb: Interactive navigation to About Me -->
+        <div class="hero-visual">
+          <a href="#uniquely-me" class="glass-orb-container" id="glass-orb" title="Click to view About Me" aria-label="Navigate to About Me section">
+            <div class="glass-orb-glow"></div>
+            <div class="glass-orb-core">
+              <div class="orb-ring ring-1"></div>
+              <div class="orb-ring ring-2"></div>
+              <div class="orb-ring ring-3"></div>
+              <div class="orb-center-nucleus">
+                <span class="data-glyph">MN</span>
+              </div>
+            </div>
+            <span class="orb-hover-pill">
+              <span>About Me</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Uniquely Me / Personal Snapshot Section -->
+    <section id="uniquely-me" class="section uniquely-me-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Introduction</span>
+          <h2 class="section-title">A Bit About Me</h2>
+          <p class="section-subtitle">
+            A quick introduction to who I am, my interests, and daily habits.
+          </p>
+          <div class="section-rule"></div>
+        </div>
+
+        <div class="uniquely-grid">
+          
+          <!-- Photo & Profile Card -->
+          <div class="glass-card uniquely-photo-card">
+            <div class="card-glass-specular"></div>
+            
+            <div class="uniquely-photo-wrapper" id="photo-frame">
+              <img id="profile-custom-photo" alt="Meghana Nalla" class="uniquely-photo-img" src="pic1.jpeg" onerror="this.style.display='none'; document.getElementById('photo-avatar-fallback').style.display='flex';">
+              
+              <div id="photo-avatar-fallback" class="photo-upload-placeholder" style="display: none;">
+                <div class="photo-avatar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <span class="upload-hint-title">Meghana Nalla</span>
+                <span class="upload-hint-sub">MS in Data Science</span>
+                <span class="upload-hint-file">Northeastern University</span>
+              </div>
+            </div>
+
+            <div class="photo-card-body">
+              <span class="photo-badge">MS Data Science</span>
+              <h3 class="photo-name">Meghana Nalla</h3>
+              <p class="photo-status">Spring 2026 Cohort</p>
+              <p class="photo-school">Northeastern University</p>
+
+              <blockquote class="photo-quote">
+                "I am currently pursuing my Master's in Data Science, which I started in Spring 2026. I am a curious and detail-oriented person who enjoys understanding how things work and why they matter. I enjoy exploring new ideas through books and conversations."
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Persona Details Column -->
+          <div class="uniquely-details-col">
+            
+            <!-- About Me Card -->
+            <div class="glass-card uniquely-subcard">
+              <div class="card-glass-specular"></div>
+              <div class="subcard-header">
+                <div class="subcard-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                </div>
+                <h3 class="subcard-title">About Me</h3>
+              </div>
+
+              <div class="facts-list">
+                <div class="fact-item">
+                  <span class="fact-emoji">🧩</span>
+                  <div class="fact-text">
+                    I solve sudoku almost every morning.
+                  </div>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-emoji">🎤</span>
+                  <div class="fact-text">
+                    I love singing in my free time.
+                  </div>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-emoji">🏃‍♀️</span>
+                  <div class="fact-text">
+                    Always up for any sport or adventure.
+                  </div>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-emoji">💡</span>
+                  <div class="fact-text">
+                    I am a quick learner; I take a new topic and explain it back in my own words.
+                  </div>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-emoji">📋</span>
+                  <div class="fact-text">
+                    I like having a plan and checking off tasks one by one, but I am always open to spontaneous plans.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Favorites & Hobbies Duo Grid -->
+            <div class="uniquely-duo-row">
+              
+              <!-- Favorites Card -->
+              <div class="glass-card uniquely-subcard">
+                <div class="card-glass-specular"></div>
+                <div class="subcard-header">
+                  <div class="subcard-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="subcard-title">Favorites</h3>
+                </div>
+
+                <div class="favorites-grid">
+                  <div class="fav-chip">
+                    <span class="fav-icon">🍕</span>
+                    <div class="fav-meta">
+                      <span class="fav-label">Favorite Food</span>
+                      <strong class="fav-val">Biryani and Pizza</strong>
+                    </div>
+                  </div>
+                  <div class="fav-chip">
+                    <span class="fav-icon">🌅</span>
+                    <div class="fav-meta">
+                      <span class="fav-label">Places</span>
+                      <strong class="fav-val">Beaches and Sunsets</strong>
+                    </div>
+                  </div>
+                  <div class="fav-chip">
+                    <span class="fav-icon">🐾</span>
+                    <div class="fav-meta">
+                      <span class="fav-label">Animals</span>
+                      <strong class="fav-val">Cats</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hobbies Card -->
+              <div class="glass-card uniquely-subcard">
+                <div class="card-glass-specular"></div>
+                <div class="subcard-header">
+                  <div class="subcard-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <h3 class="subcard-title">Hobbies</h3>
+                </div>
+
+                <div class="hobbies-list">
+                  <div class="hobby-badge">
+                    <span class="hobby-emoji">☕</span>
+                    <span class="hobby-name">Trying new cafés</span>
+                  </div>
+                  <div class="hobby-badge">
+                    <span class="hobby-emoji">🏊‍♀️</span>
+                    <span class="hobby-name">Swimming</span>
+                  </div>
+                  <div class="hobby-badge">
+                    <span class="hobby-emoji">🎬</span>
+                    <span class="hobby-name">Watching movies/series</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Personal Aspiration Card -->
+            <div class="glass-card uniquely-subcard aspiration-card">
+              <div class="card-glass-specular"></div>
+              <div class="aspiration-content">
+                <div class="aspiration-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                  </svg>
+                </div>
+                <div class="aspiration-text">
+                  <span class="aspiration-label">Goals</span>
+                  <p class="aspiration-quote">
+                    "I aspire to work in tech as a data professional, learn from experienced people, and keep growing into a better version of myself both personally and professionally."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Academic & Technical Background Section -->
+    <section id="about" class="section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Background</span>
+          <h2 class="section-title">Education & Experience Profile</h2>
+          <div class="section-rule"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Card -->
+          <div class="glass-card about-main-card">
+            <div class="card-glass-specular"></div>
+            <h3 class="about-card-title">Data Science Student & Aspiring Practitioner</h3>
+            
+            <p class="about-lead">
+              I am currently pursuing my Master of Science in Data Science at Northeastern University (Khoury College of Computer Sciences) in Boston, MA.
+            </p>
+            
+            <p class="about-body">
+              My coursework and project work center on machine learning, statistical modeling, algorithms, and data engineering. 
+              I have practical experience developing end to end solutions, from cleaning and preprocessing complex datasets to training models 
+              and deploying functional applications on cloud platforms.
+            </p>
+
+            <p class="about-body">
+              Previously, I worked as a Microsoft Dynamics 365 Intern and Junior AI Developer at Blackwater Tech, configuring Microsoft Dynamics 365 CRM 
+              modules and working on conversational AI platform infrastructure with Pinecone vector embeddings. I also completed machine learning and 
+              data science internships at TechCiti and SmartInternz.
+            </p>
+
+            <!-- Key Competencies -->
+            <div class="values-grid">
+              <div class="value-item">
+                <div class="value-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="value-heading">Data Science & Analytics</h4>
+                  <p class="value-desc">Statistical inference, survey weighted regressions (ANOVA, t tests, ordinal logistic regression), and exploratory analysis.</p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="value-heading">Data Engineering & Pipelines</h4>
+                  <p class="value-desc">ETL pipelines, Apache Airflow workflow orchestration, database design, Docker containerization, and REST APIs.</p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="value-heading">Applied Machine Learning & AI</h4>
+                  <p class="value-desc">Supervised and unsupervised models, deep learning (CNN, RNN), audio classification with Librosa, and vector embeddings.</p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="value-heading">Cloud & Platforms</h4>
+                  <p class="value-desc">Microsoft Azure Certified, Pinecone vector database, IBM Cloud, Microsoft Power Platform, and Dynamics 365.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile Card -->
+          <div class="glass-card about-side-card">
+            <div class="card-glass-specular"></div>
+            
+            <div class="profile-avatar-container">
+              <div class="avatar-glass-ring">
+                <img src="https://avatars.githubusercontent.com/u/91136903?v=4" alt="Meghana Nalla" class="avatar-img" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+                <div class="avatar-placeholder" id="avatar-fallback" style="display: none;">
+                  <span class="avatar-letters">MN</span>
+                  <div class="avatar-reflection"></div>
+                </div>
+              </div>
+              <h4 style="color: var(--text-white); font-size: 1.15rem; margin-top: 0.4rem;">Meghana Nalla</h4>
+              <p class="avatar-tip">Northeastern University · Khoury College</p>
+            </div>
+
+            <div class="info-list">
+              <div class="info-row">
+                <span class="info-label">Education</span>
+                <span class="info-value">M.S. in Data Science (2026 to 2028)</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Undergraduate</span>
+                <span class="info-value">B.Tech in CSE (VIT-AP, 2020 to 2024)</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Location</span>
+                <span class="info-value">Boston, MA 02115</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Open Roles</span>
+                <span class="info-value">Data Scientist, Data Engineer, ML & AI</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Certifications</span>
+                <span class="info-value">Azure AI Engineer Associate · Azure Fundamentals</span>
+              </div>
+            </div>
+
+            <div class="side-card-cta">
+              <a href="#contact" class="glass-btn btn-sm btn-full">
+                <span>Contact Me</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Skills</span>
+          <h2 class="section-title">Technical & Professional Skills</h2>
+          <p class="section-subtitle">
+            Tools, technologies, and interpersonal skills I use across data science, engineering, and machine learning projects.
+          </p>
+          <div class="section-rule"></div>
+        </div>
+
+        <!-- Skills Toolbar -->
+        <div class="skills-toolbar glass-card">
+          <div class="category-tabs" role="tablist" aria-label="Skills Categories">
+            <button class="cat-tab active" data-category="all" role="tab" aria-selected="true">All</button>
+            <button class="cat-tab" data-category="programming" role="tab" aria-selected="false">Programming</button>
+            <button class="cat-tab" data-category="datascience" role="tab" aria-selected="false">Data Science & Stats</button>
+            <button class="cat-tab" data-category="machinelearning" role="tab" aria-selected="false">Machine Learning & AI</button>
+            <button class="cat-tab" data-category="cloudtools" role="tab" aria-selected="false">Cloud & Engineering</button>
+            <button class="cat-tab" data-category="softskills" role="tab" aria-selected="false">Soft Skills</button>
+          </div>
+
+          <div class="skill-search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="skill-search" placeholder="Search skills (e.g., Python, SQL, Airflow, Problem Solving)..." aria-label="Search skills">
+          </div>
+
+          <!-- Add Skill Trigger -->
+          <button id="add-skill-trigger" class="glass-btn btn-sm" title="Add a custom skill to your display">
+            <span>+ Add Skill</span>
+          </button>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-categories-grid" id="skills-container">
+          
+          <!-- Programming Group -->
+          <div class="glass-card skill-group-card" data-group="programming">
+            <div class="card-glass-specular"></div>
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="group-title">Programming Languages</h3>
+            </div>
+            <div class="pills-wrapper">
+              <span class="glass-pill skill-pill" data-name="python">
+                <span class="pill-dot"></span>Python
+              </span>
+              <span class="glass-pill skill-pill" data-name="sql sqlite">
+                <span class="pill-dot"></span>SQL & SQLite
+              </span>
+              <span class="glass-pill skill-pill" data-name="r">
+                <span class="pill-dot"></span>R
+              </span>
+              <span class="glass-pill skill-pill" data-name="java">
+                <span class="pill-dot"></span>Java
+              </span>
+            </div>
+          </div>
+
+          <!-- Data Science & Stats Group -->
+          <div class="glass-card skill-group-card" data-group="datascience">
+            <div class="card-glass-specular"></div>
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 3v18h18"></path>
+                  <path d="M18 17V9"></path>
+                  <path d="M13 17V5"></path>
+                  <path d="M8 17v-3"></path>
+                </svg>
+              </div>
+              <h3 class="group-title">Data Science & Statistical Modeling</h3>
+            </div>
+            <div class="pills-wrapper">
+              <span class="glass-pill skill-pill" data-name="pandas">
+                <span class="pill-dot"></span>Pandas
+              </span>
+              <span class="glass-pill skill-pill" data-name="numpy">
+                <span class="pill-dot"></span>NumPy
+              </span>
+              <span class="glass-pill skill-pill" data-name="time series forecasting arima">
+                <span class="pill-dot"></span>Time Series Forecasting (ARIMA / SARIMA)
+              </span>
+              <span class="glass-pill skill-pill" data-name="survey-weighted regression anova t-tests">
+                <span class="pill-dot"></span>Survey-Weighted Regression (ANOVA, t-tests)
+              </span>
+              <span class="glass-pill skill-pill" data-name="ordinal logistic regression">
+                <span class="pill-dot"></span>Ordinal Logistic Regression
+              </span>
+              <span class="glass-pill skill-pill" data-name="data visualization matplotlib seaborn">
+                <span class="pill-dot"></span>Data Visualization (Matplotlib, Seaborn, Plotly)
+              </span>
+              <span class="glass-pill skill-pill" data-name="eda exploratory data analysis">
+                <span class="pill-dot"></span>Exploratory Data Analysis (EDA)
+              </span>
+            </div>
+          </div>
+
+          <!-- Machine Learning & AI Group -->
+          <div class="glass-card skill-group-card" data-group="machinelearning">
+            <div class="card-glass-specular"></div>
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <h3 class="group-title">Machine Learning & AI</h3>
+            </div>
+            <div class="pills-wrapper">
+              <span class="glass-pill skill-pill" data-name="scikit-learn">
+                <span class="pill-dot"></span>Scikit-learn
+              </span>
+              <span class="glass-pill skill-pill" data-name="tensorflow keras">
+                <span class="pill-dot"></span>TensorFlow & Keras
+              </span>
+              <span class="glass-pill skill-pill" data-name="cnn rnn deep learning">
+                <span class="pill-dot"></span>CNN & RNN Architectures
+              </span>
+              <span class="glass-pill skill-pill" data-name="librosa audio deep learning">
+                <span class="pill-dot"></span>Audio Classification (Librosa)
+              </span>
+              <span class="glass-pill skill-pill" data-name="vector embeddings pinecone">
+                <span class="pill-dot"></span>Vector Embeddings (Pinecone)
+              </span>
+              <span class="glass-pill skill-pill" data-name="supervised unsupervised classification regression">
+                <span class="pill-dot"></span>Supervised & Unsupervised Learning
+              </span>
+            </div>
+          </div>
+
+          <!-- Cloud & Data Engineering Group -->
+          <div class="glass-card skill-group-card" data-group="cloudtools">
+            <div class="card-glass-specular"></div>
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="group-title">Cloud, Data Engineering & Tools</h3>
+            </div>
+            <div class="pills-wrapper">
+              <span class="glass-pill skill-pill" data-name="microsoft azure ai engineer">
+                <span class="pill-dot"></span>Microsoft Azure (AI Engineer Associate)
+              </span>
+              <span class="glass-pill skill-pill" data-name="apache airflow etl">
+                <span class="pill-dot"></span>Apache Airflow (ETL Pipelines)
+              </span>
+              <span class="glass-pill skill-pill" data-name="docker">
+                <span class="pill-dot"></span>Docker Containerization
+              </span>
+              <span class="glass-pill skill-pill" data-name="fastapi flask">
+                <span class="pill-dot"></span>FastAPI & Flask APIs
+              </span>
+              <span class="glass-pill skill-pill" data-name="dynamics 365 power automate">
+                <span class="pill-dot"></span>Dynamics 365 & Power Automate
+              </span>
+              <span class="glass-pill skill-pill" data-name="ibm cloud">
+                <span class="pill-dot"></span>IBM Cloud
+              </span>
+              <span class="glass-pill skill-pill" data-name="git github jupyter">
+                <span class="pill-dot"></span>Git, GitHub & Jupyter Notebook
+              </span>
+            </div>
+          </div>
+
+          <!-- Soft Skills Group -->
+          <div class="glass-card skill-group-card" data-group="softskills">
+            <div class="card-glass-specular"></div>
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="group-title">Soft Skills & Professional Strengths</h3>
+            </div>
+            <div class="pills-wrapper">
+              <span class="glass-pill skill-pill" data-name="problem solving">
+                <span class="pill-dot"></span>Problem Solving
+              </span>
+              <span class="glass-pill skill-pill" data-name="analytical thinking">
+                <span class="pill-dot"></span>Analytical Thinking
+              </span>
+              <span class="glass-pill skill-pill" data-name="cross-functional collaboration team teamwork">
+                <span class="pill-dot"></span>Cross-Functional Collaboration
+              </span>
+              <span class="glass-pill skill-pill" data-name="technical documentation communication">
+                <span class="pill-dot"></span>Technical Documentation & Presentation
+              </span>
+              <span class="glass-pill skill-pill" data-name="adaptability continuous learning">
+                <span class="pill-dot"></span>Adaptability & Quick Learning
+              </span>
+              <span class="glass-pill skill-pill" data-name="project organization workflow management">
+                <span class="pill-dot"></span>Organization & Workflow Management
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Portfolio</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Direct repositories of projects I have built in time series forecasting, statistical modeling, bioacoustic deep learning, and data pipelines.
+          </p>
+          <div class="section-rule"></div>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Chicago Airport Weather Time Series Forecasting -->
+          <article class="glass-card project-card">
+            <div class="card-glass-specular"></div>
+            
+            <div class="project-header">
+              <span class="project-badge">Time Series & Forecasting</span>
+              <a href="https://github.com/meghana2711/WeatherTimeSeries_ChicagoAiport" target="_blank" rel="noopener noreferrer" class="glass-icon-link" title="Open GitHub Repository" aria-label="Open GitHub Repository for Chicago Airport Weather Time Series">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Chicago Airport Weather Time Series Forecasting</h3>
+              <p class="project-description">
+                Conducted time series analysis and predictive forecasting on historical Chicago airport weather observations. 
+                Performed exploratory temporal analysis, trend and seasonal decomposition, stationarity testing, 
+                and evaluated predictive forecasting models.
+              </p>
+              
+              <ul class="project-points">
+                <li>Preprocessed longitudinal meteorological time series data with resampling, imputation, and lag features.</li>
+                <li>Trained and validated time series models to project future weather patterns and analyze cyclical variance.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Time Series</span>
+                <span class="tag">Forecasting</span>
+                <span class="tag">Statsmodels</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/meghana2711/WeatherTimeSeries_ChicagoAiport" target="_blank" rel="noopener noreferrer" class="glass-btn btn-primary btn-sm btn-full">
+                <span>View on GitHub</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Identifying Key Drivers of Poor Mental Health Days -->
+          <article class="glass-card project-card">
+            <div class="card-glass-specular"></div>
+            
+            <div class="project-header">
+              <span class="project-badge">Statistical Modeling · Northeastern</span>
+              <a href="https://github.com/meghana2711/BRFSS_MentalHealth_Statistical_Inference" target="_blank" rel="noopener noreferrer" class="glass-icon-link" title="Open GitHub Repository" aria-label="Open GitHub Repository for BRFSS Mental Health Project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Identifying Key Drivers of Poor Mental Health Days</h3>
+              <p class="project-description">
+                Applied survey-weighted regression (ANOVA, t-tests, ordinal logistic regression) on CDC BRFSS 2024 data (N=238,783) 
+                to analyze social, demographic, and behavioral factors linked to poor mental health.
+              </p>
+              
+              <ul class="project-points">
+                <li>Identified loneliness and life dissatisfaction as the strongest predictors of mental health severity.</li>
+                <li>Demonstrated that emotional support acts as a statistically significant buffer against loneliness's negative impact.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">R</span>
+                <span class="tag">Survey Regression</span>
+                <span class="tag">ANOVA</span>
+                <span class="tag">Ordinal Logistic</span>
+                <span class="tag">BRFSS Data</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/meghana2711/BRFSS_MentalHealth_Statistical_Inference" target="_blank" rel="noopener noreferrer" class="glass-btn btn-primary btn-sm btn-full">
+                <span>View on GitHub</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Ross Seal Call Identification Using Deep Learning -->
+          <article class="glass-card project-card">
+            <div class="card-glass-specular"></div>
+            
+            <div class="project-header">
+              <span class="project-badge">Deep Learning · Bioacoustics</span>
+              <a href="https://github.com/meghana2711/Ross-Seal-Identification-Using-Deep-Learning" target="_blank" rel="noopener noreferrer" class="glass-icon-link" title="Open GitHub Repository" aria-label="Open GitHub Repository for Ross Seal Identification">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Ross Seal Call Identification Using Deep Learning</h3>
+              <p class="project-description">
+                Developed a deep learning classification model employing CNN and RNN architectures to identify Ross Seal 
+                vocalizations from raw hydrophone audio recordings.
+              </p>
+              
+              <ul class="project-points">
+                <li>Extracted audio spectrogram features using Librosa and NumPy in Python.</li>
+                <li>Implemented data augmentation, noise reduction, and hyperparameter tuning in TensorFlow and Keras to improve model robustness.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Keras</span>
+                <span class="tag">Librosa</span>
+                <span class="tag">CNN & RNN</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/meghana2711/Ross-Seal-Identification-Using-Deep-Learning" target="_blank" rel="noopener noreferrer" class="glass-btn btn-primary btn-sm btn-full">
+                <span>View on GitHub</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Real-Time End-to-End Finance Dashboard -->
+          <article class="glass-card project-card">
+            <div class="card-glass-specular"></div>
+            
+            <div class="project-header">
+              <span class="project-badge">Data Engineering & Pipelines</span>
+              <a href="https://github.com/meghana2711/RealTime_End2End_Finance_Dashboard" target="_blank" rel="noopener noreferrer" class="glass-icon-link" title="Open GitHub Repository" aria-label="Open GitHub Repository for Real-Time Finance Dashboard">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Real-Time End-to-End Finance Dashboard</h3>
+              <p class="project-description">
+                A full-stack stock intelligence platform featuring Apache Airflow ETL pipelines, FastAPI, and Docker. 
+                Ingests US and Indian market data to compute technical indicators and display interactive metrics.
+              </p>
+              
+              <ul class="project-points">
+                <li>Built automated Airflow DAGs for data ingestion, cleaning, and metric calculations (RSI, MACD, SMA).</li>
+                <li>Containerized services using Docker and served endpoints via FastAPI.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Apache Airflow</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Docker</span>
+                <span class="tag">ETL</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/meghana2711/RealTime_End2End_Finance_Dashboard" target="_blank" rel="noopener noreferrer" class="glass-btn btn-primary btn-sm btn-full">
+                <span>View on GitHub</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: Flight Delay Prediction -->
+          <article class="glass-card project-card">
+            <div class="card-glass-specular"></div>
+            
+            <div class="project-header">
+              <span class="project-badge">Cloud Machine Learning · SmartInternz</span>
+              <a href="https://github.com/meghana2711/Flight-Delay-Prediction-" target="_blank" rel="noopener noreferrer" class="glass-icon-link" title="Open GitHub Repository" aria-label="Open GitHub Repository for Flight Delay Prediction">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Flight Delay Prediction Using IBM Cloud</h3>
+              <p class="project-description">
+                Built a flight delay prediction system using machine learning and deployed it as a Flask-based web application 
+                on IBM Cloud, providing real-time delay risk estimates for user-entered flight details.
+              </p>
+              
+              <ul class="project-points">
+                <li>Integrated trained predictive models into a cloud-hosted Flask web application.</li>
+                <li>Created intuitive visualizations allowing users to interpret delay probabilities.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">IBM Cloud</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Cloud ML</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/meghana2711/Flight-Delay-Prediction-" target="_blank" rel="noopener noreferrer" class="glass-btn btn-primary btn-sm btn-full">
+                <span>View on GitHub</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Career</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">
+            Industry internships in cloud platforms, process automation, conversational AI infrastructure, and applied machine learning.
+          </p>
+          <div class="section-rule"></div>
+        </div>
+
+        <!-- Vertical Glass Timeline for Experience -->
+        <div class="timeline-container">
+          <div class="timeline-spine"></div>
+
+          <!-- Experience 1: Blackwater Tech -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="node-pulse"></div>
+            </div>
+            
+            <div class="glass-card timeline-card">
+              <div class="card-glass-specular"></div>
+              
+              <div class="timeline-meta">
+                <span class="timeline-date">May 2025 to October 2025</span>
+                <span class="timeline-tag">Hyderabad, India</span>
+              </div>
+
+              <h3 class="timeline-title">Microsoft Dynamics 365 Intern & Junior AI Developer</h3>
+              <p class="timeline-institution">Blackwater Tech</p>
+              
+              <ul class="timeline-bullets">
+                <li>Configuring and customizing Microsoft Dynamics 365 CRM modules including entities, forms, views, and business process flows.</li>
+                <li>Conversational AI Platform and Infrastructure Procurement for the AI project development. Worked on text extraction from company documents (PDF, Word, and website data) and upserting vector embeddings into Pinecone.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2: TechCiti Private Limited -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="node-pulse"></div>
+            </div>
+            
+            <div class="glass-card timeline-card">
+              <div class="card-glass-specular"></div>
+              
+              <div class="timeline-meta">
+                <span class="timeline-date">January 2024 to May 2024</span>
+                <span class="timeline-tag">Bangalore, India</span>
+              </div>
+
+              <h3 class="timeline-title">Machine Learning Intern</h3>
+              <p class="timeline-institution">TechCiti Private Limited</p>
+              
+              <ul class="timeline-bullets">
+                <li>Contributed to end-to-end machine learning projects, from data preprocessing to model deployment. Applied supervised and unsupervised learning techniques.</li>
+                <li>Collaborated with teams to document workflows and present technical findings.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 3: SmartInternz -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="node-pulse"></div>
+            </div>
+            
+            <div class="glass-card timeline-card">
+              <div class="card-glass-specular"></div>
+              
+              <div class="timeline-meta">
+                <span class="timeline-date">April 2022 to June 2022</span>
+                <span class="timeline-tag">Hyderabad, India</span>
+              </div>
+
+              <h3 class="timeline-title">Data Science Intern</h3>
+              <p class="timeline-institution">SmartInternz</p>
+              
+              <ul class="timeline-bullets">
+                <li>Built and deployed a flight delay prediction system using Flask and IBM Cloud, enabling real-time inference.</li>
+                <li>Gained hands-on experience in end-to-end model integration and cloud-based deployment.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            I am actively open to Data Scientist, Data Engineer, Machine Learning, and AI opportunities (internships, co-ops, and full-time positions).
+          </p>
+          <div class="section-rule"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info & Quick Links Card -->
+          <div class="glass-card contact-info-card">
+            <div class="card-glass-specular"></div>
+            
+            <h3 class="contact-card-title">Let's Connect</h3>
+            <p class="contact-card-intro">
+              Please feel free to reach out directly via email, LinkedIn, or phone.
+            </p>
+
+            <div class="contact-links-list">
+              <!-- Direct Email Card -->
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-content">
+                  <span class="method-title">Email</span>
+                  <a href="mailto:nalla.me@northeastern.edu" class="method-value" id="email-link">nalla.me@northeastern.edu</a>
+                </div>
+                <button class="copy-email-btn" id="copy-email-trigger" title="Copy email address" aria-label="Copy email address to clipboard">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/meghana-nalla-8b8906215" target="_blank" rel="noopener noreferrer" class="contact-method-card clickable">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="method-content">
+                  <span class="method-title">LinkedIn Profile</span>
+                  <span class="method-value">linkedin.com/in/meghana-nalla-8b8906215</span>
+                </div>
+                <div class="method-arrow">→</div>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/meghana2711" target="_blank" rel="noopener noreferrer" class="contact-method-card clickable">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="method-content">
+                  <span class="method-title">GitHub</span>
+                  <span class="method-value">github.com/meghana2711</span>
+                </div>
+                <div class="method-arrow">→</div>
+              </a>
+
+              <!-- Phone Card -->
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="method-content">
+                  <span class="method-title">Phone</span>
+                  <a href="tel:+16176996376" class="method-value">(617) 699-6376</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="timezone-indicator">
+              <span class="pulse-dot"></span>
+              <span>Based in Boston, MA 02115 · Open to on-site, hybrid, and remote roles</span>
+            </div>
+          </div>
+
+          <!-- Message Form Card -->
+          <div class="glass-card contact-form-card">
+            <div class="card-glass-specular"></div>
+            
+            <h3 class="form-title">Send a Direct Message</h3>
+            
+            <form id="contact-form" class="ocean-form">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" required placeholder="Your Name">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email Address</label>
+                <input type="email" id="contact-email" name="email" required placeholder="your.email@company.com">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" required placeholder="Role / Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="4" required placeholder="Hi Meghana, ..."></textarea>
+              </div>
+
+              <button type="submit" class="glass-btn btn-primary btn-full" id="submit-btn">
+                <span>Send Message</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="brand-symbol">◈</span>
+        <span class="footer-name">Meghana Nalla</span>
+        <span class="footer-copy">· Northeastern University</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Back to Top ↑</a>
+        <a href="https://github.com/meghana2711" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/meghana-nalla-8b8906215" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:nalla.me@northeastern.edu">Email</a>
+      </div>
+
+      <div class="footer-year">
+        <span>© <span id="current-year">2026</span> Meghana Nalla</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Add Skill Modal for customizability -->
+  <div class="glass-modal-overlay" id="add-skill-modal" aria-hidden="true" role="dialog" aria-labelledby="add-skill-title">
+    <div class="glass-modal-card">
+      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="project-badge">Customize Stack</span>
+        <h3 id="add-skill-title" class="modal-title">Add a New Skill Pill</h3>
+      </div>
+      <form id="add-skill-form" class="ocean-form">
+        <div class="form-group">
+          <label for="new-skill-category">Target Category</label>
+          <select id="new-skill-category" required>
+            <option value="programming">Programming Languages</option>
+            <option value="datascience">Data Science & Stats</option>
+            <option value="machinelearning">Machine Learning & AI</option>
+            <option value="cloudtools">Cloud & Engineering</option>
+            <option value="softskills">Soft Skills</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="new-skill-name">Skill Name</label>
+          <input type="text" id="new-skill-name" required placeholder="e.g., PyTorch, Tableau, Collaboration">
+        </div>
+        <button type="submit" class="glass-btn btn-primary btn-full">
+          <span>Add to Portfolio</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container for Copied Email and Alerts -->
+  <div id="toast-notification" class="glass-toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
